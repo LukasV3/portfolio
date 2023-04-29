@@ -34,14 +34,19 @@ export default function Experience() {
       {experiences.length > 0 && (
         <div className="flex flex-col items-center gap-y-8 text-white mt-20">
           {experiences.map((job) => (
-            <div className="px-5 py-4 bg-[#1d1836] rounded-md border-b-2 border-white w-full md:w-[450px]">
+            <div
+              key={job.title}
+              className="px-5 py-4 bg-[#1d1836] rounded-md border-b-2 border-white w-full md:w-[450px]"
+            >
               <h3 className="text-2xl font-bold">{job.title}</h3>
 
               <p className="text-zinc-500 text-sm font-semibold">{job.company}</p>
 
               <ul className="list-disc ml-5 mt-5 space-y-2">
                 {job.bulletPoints.map((point) => (
-                  <li className="text-base pl-1 tracking-wider">{point}</li>
+                  <li key={point} className="text-base pl-1 tracking-wider">
+                    {point}
+                  </li>
                 ))}
               </ul>
 
