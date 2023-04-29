@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import { SocialLinks } from "./SocialLinks";
 
 type HorizontalRuleProps = {
   direction: "left" | "right";
@@ -11,14 +12,14 @@ export default function Hero() {
 
       <HorizontalRule direction="left" />
 
-      <h1 className="z-10 text-4xl text-transparent whitespace-nowrap bg-clip-text bg-white text-edge-outline animate-title duration-1000 sm:text-6xl md:text-9xl">
+      <h1 className="z-10 text-5xl text-transparent whitespace-nowrap bg-clip-text bg-white text-edge-outline animate-title duration-1000 sm:text-6xl md:text-9xl">
         Lukas Volk
       </h1>
 
       <HorizontalRule direction="right" />
 
       <div className="container max-w-lg my-16 text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-500">
+        <h2 className="text-sm text-zinc-500 mb-4">
           Hi, my name is Lukas and I'm a self-taught frontend developer currently working
           at{" "}
           <a
@@ -30,6 +31,8 @@ export default function Hero() {
           </a>
           .
         </h2>
+
+        <SocialLinks />
       </div>
     </section>
   );
