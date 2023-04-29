@@ -1,6 +1,11 @@
 import { Heading } from "./Heading";
 
 export default function Experience() {
+  const section = {
+    heading: "Work Experience",
+    subheading: "What I have done so far",
+  };
+
   const experiences = [
     {
       title: "Lead Frontend Developer",
@@ -24,11 +29,7 @@ export default function Experience() {
 
   return (
     <section id="experience" className="container my-20 py-10">
-      <Heading
-        heading="Work Experience"
-        subheading="What I have done so far"
-        center={true}
-      />
+      <Heading heading={section.heading} subheading={section.subheading} center={true} />
 
       {experiences.length > 0 && (
         <div className="flex flex-col items-center gap-y-8 text-white mt-20">

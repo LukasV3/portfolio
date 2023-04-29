@@ -10,6 +10,12 @@ type TechCardProps = {
 };
 
 export default function About() {
+  const section = {
+    heading: "Overview",
+    subheading: "Introduction",
+    body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque eligendi fugit sunt nostrum placeat, officia dolores earum, quia modi assumenda suscipit quod totam eaque consectetur, provident cumque explicabo a iusto.",
+  };
+
   const techStack = [
     {
       title: "React",
@@ -31,14 +37,11 @@ export default function About() {
 
   return (
     <section id="about" className="container mb-20 py-10">
-      <Heading heading="Overview" subheading="Introduction" />
-
-      <p className="text-sm text-zinc-500 mt-4 max-w-3xl">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci non totam
-        veniam officiis sint recusandae perspiciatis itaque, cupiditate voluptatem sed
-        illum, explicabo impedit. Consectetur, nulla. Soluta rem inventore esse
-        perspiciatis.
-      </p>
+      <Heading
+        heading={section.heading}
+        subheading={section.subheading}
+        body={section.body}
+      />
 
       {techStack.length > 0 && (
         <div className="mt-20 flex flex-wrap gap-10">
