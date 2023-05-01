@@ -1,22 +1,41 @@
+import HtmlIcon from "../assets/tech/html5.png";
+import CssIcon from "../assets/tech/css3.png";
+import SassIcon from "../assets/tech/sass.png";
+import JavaScriptIcon from "../assets/tech/javascript.png";
 import ReactIcon from "../assets/tech/reactjs.png";
 import TypeScriptIcon from "../assets/tech/typescript.png";
 import TailwindIcon from "../assets/tech/tailwind.png";
 import GitIcon from "../assets/tech/git.png";
 import { Heading } from "./Heading";
 
-type TechCardProps = {
-  title: string;
-  icon: string;
-};
-
 export default function About() {
   const section = {
     heading: "Overview",
     subheading: "Introduction",
-    body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque eligendi fugit sunt nostrum placeat, officia dolores earum, quia modi assumenda suscipit quod totam eaque consectetur, provident cumque explicabo a iusto.",
+    body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque eligendi fugit sun i fugit sunt nostrum placeat, officia dolores earum, quia modi assumenda suscipit quod totam eaque consectetur, provident cumque explicabo a iusto Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque eligendi fugit sunt n. nostrum placeat, officia dolores earum, quia modi assumenda suscipit quod totam eaque consectetur, provident cumque.",
   };
 
   const techStack = [
+    {
+      title: "HTML5",
+      icon: HtmlIcon,
+    },
+    {
+      title: "CSS3",
+      icon: CssIcon,
+    },
+    {
+      title: "SASS",
+      icon: SassIcon,
+    },
+    {
+      title: "Tailwind CSS",
+      icon: TailwindIcon,
+    },
+    {
+      title: "JavaScript",
+      icon: JavaScriptIcon,
+    },
     {
       title: "React",
       icon: ReactIcon,
@@ -24,10 +43,6 @@ export default function About() {
     {
       title: "TypeScript",
       icon: TypeScriptIcon,
-    },
-    {
-      title: "Tailwind CSS",
-      icon: TailwindIcon,
     },
     {
       title: "Git",
@@ -41,29 +56,21 @@ export default function About() {
         heading={section.heading}
         subheading={section.subheading}
         body={section.body}
+        aboutHeading={true}
       />
 
       {techStack.length > 0 && (
-        <div className="mt-20 flex flex-wrap gap-10">
+        <div className="clear-left mt-10 flex flex-wrap gap-x-10 gap-y-5">
           {techStack.map((tech) => (
-            <TechCard key={tech.title} title={tech.title} icon={tech.icon} />
+            <img
+              src={tech.icon}
+              title={tech.title}
+              alt={tech.title}
+              className="w-10 h-10"
+            />
           ))}
         </div>
       )}
     </section>
-  );
-}
-
-function TechCard({ title, icon }: TechCardProps) {
-  return (
-    <div className="w-full sm:w-[250px]">
-      <div className="w-full green-pink-gradient p-px rounded-2xl">
-        <div className="bg-[#151030] rounded-2xl py-5 px-12 min-h-[260px] flex flex-col gap-y-6 justify-center items-center">
-          <img src={icon} alt={title} className="w-20 h-20 object-fit" />
-
-          <h3 className="text-white text-xl font-bold text-center">{title}</h3>
-        </div>
-      </div>
-    </div>
   );
 }
