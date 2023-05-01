@@ -1,6 +1,8 @@
 import { Heading } from "./Heading";
 import { ComposableMap, Geographies, Geography, Annotation } from "react-simple-maps";
 import { SocialLinks } from "./SocialLinks";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   return (
@@ -30,34 +32,66 @@ export default function Contact() {
 }
 
 function Form() {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setLoading(true);
+    if (!formRef.current) throw Error("formRef is not assigned");
+
+    emailjs
+      .sendForm(
+        "service_wezhe4i",
+        "template_euq8rfv",
+        formRef.current,
+        "AqfnYHMt-gd9qsfAD"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSuccess(true);
+          setLoading(false);
+        },
+        (error) => {
+          console.log(error.text);
+          setSuccess(false);
+        }
+      );
+  }
+
   return (
-    <form className="mt-12 flex flex-col gap-8">
+    <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
       <label className="flex flex-col">
-        <span className="text-white font-medium mb-4">Your Name</span>
+        <span className="text-white font-medium mb-4">Your Name*</span>
         <input
           type="text"
           name="name"
           placeholder="Name"
+          required
           className="bg-[#151030] py-4 px-6 text-white rounded-lg outline-none border-none font-medium"
         />
       </label>
 
       <label className="flex flex-col">
-        <span className="text-white font-medium mb-4">Your Email</span>
+        <span className="text-white font-medium mb-4">Your Email*</span>
         <input
           type="email"
           name="email"
           placeholder="Email"
+          required
           className="bg-[#151030] py-4 px-6 text-white rounded-lg outline-none border-none font-medium"
         />
       </label>
 
       <label className="flex flex-col">
-        <span className="text-white font-medium mb-4">Your Message</span>
+        <span className="text-white font-medium mb-4">Your Message*</span>
         <textarea
           rows={4}
           name="message"
           placeholder="Message"
+          required
           className="bg-[#151030] py-4 px-6 text-white rounded-lg outline-none border-none font-medium"
         />
       </label>
@@ -67,9 +101,11 @@ function Form() {
           className="bg-[#151030] py-2 px-8 rounded-xl outline-none text-white font-bold hover:bg-[#151030]/50 duration-300"
           type="submit"
         >
-          Send
+          {loading ? "Sending" : "Send"}
         </button>
       </div>
+
+      {success && <p className="text-center">Your message has been sent!</p>}
     </form>
   );
 }
