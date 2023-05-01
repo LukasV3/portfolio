@@ -1,5 +1,5 @@
-import GitHubIcon from "../assets/logos/github.svg";
-import LinkedInIcon from "../assets/logos/linkedin.svg";
+import GitHubIcon from "../assets/icons/github.svg";
+import LinkedInIcon from "../assets/icons/linkedin.svg";
 
 type SocialLinksProps = {
   iconSize?: "sm" | "md";
