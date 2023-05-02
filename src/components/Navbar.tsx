@@ -1,10 +1,6 @@
-export default function Navbar() {
-  const navigation = [
-    { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
-    { name: "Contact", href: "#contact" },
-  ];
+import { navigation } from "../content";
 
+export default function Navbar() {
   return (
     <nav className="my-16 animate-fade-in">
       <ul className="flex items-center justify-center gap-4">
@@ -14,7 +10,7 @@ export default function Navbar() {
             href={item.href}
             className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
           >
-            {item.name}
+            {item.title}
           </a>
         ))}
       </ul>

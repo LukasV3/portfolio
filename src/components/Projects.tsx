@@ -1,100 +1,18 @@
 import { Heading } from "./Heading";
 import LinkIcon from "../assets/icons/link.svg";
 import GitHubIcon from "../assets/icons/github.svg";
+import { projects } from "../content";
 
 type ProjectCardProps = {
   title: string;
   description: string;
   liveUrl: string;
   githubUrl: string;
-  projectTechStack: string[];
+  tags: {
+    name: string;
+    color: string;
+  }[];
 };
-
-const techStack = [
-  {
-    title: "React",
-    colorClass: "text-red-500",
-  },
-  {
-    title: "TypeScript",
-    colorClass: "text-green-500",
-  },
-  {
-    title: "Tailwind",
-    colorClass: "text-blue-500",
-  },
-  {
-    title: "Git",
-    colorClass: "text-orange-500",
-  },
-];
-
-const projects = [
-  {
-    title: "DestinationCore Component Library",
-    description:
-      "Library of standalone VueJS components common across DestinationCore's portfolio of websites.",
-    liveUrl: "",
-    githubUrl: "",
-    projectTechStack: ["react", "typescript", "tailwind"],
-  },
-  {
-    title: "Visit Lichfield",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quasi, odit placeat officia dolor sunt quibusdam quaerat distinctio!",
-    liveUrl: "https://www.visitlichfield.co.uk",
-    githubUrl: "",
-    projectTechStack: ["react", "typescript", "tailwind"],
-  },
-  {
-    title: "Notable",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quasi, odit placeat officia dolor sunt quibusdam quaerat distinctio! Nihil animi veniam molestias saepe, iure consequatur quisquam ex facere aperiam.",
-    liveUrl: "https://notable-lv3.netlify.app",
-    githubUrl: "https://github.com/LukasV3/notable",
-    projectTechStack: ["react", "typescript", "tailwind"],
-  },
-  {
-    title: "Visit Worcestershire Trade",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quasi, odit placeat officia dolor sunt quibusdam quaerat distinctio!",
-    liveUrl: "https://www.visitworcestershire.org",
-    githubUrl: "",
-    projectTechStack: ["react", "typescript", "tailwind"],
-  },
-  {
-    title: "Portfolio",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quasi, odit placeat officia dolor sunt quibusdam quaerat distinctio!",
-    liveUrl: "https://lukas.dev",
-    githubUrl: "https://github.com/LukasV3/portfolio",
-    projectTechStack: ["react", "typescript", "tailwind"],
-  },
-  {
-    title: "MetroCentre Redesign",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quasi, odit placeat officia dolor sunt quibusdam quaerat distinctio!",
-    liveUrl: "https://themetrocentre.co.uk",
-    githubUrl: "",
-    projectTechStack: ["react", "typescript", "tailwind"],
-  },
-  {
-    title: "Visit Bury St Edmunds",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quasi, odit placeat officia dolor sunt quibusdam quaerat distinctio!",
-    liveUrl: "https://www.visit-burystedmunds.co.uk",
-    githubUrl: "",
-    projectTechStack: ["react", "typescript", "tailwind"],
-  },
-  {
-    title: "Chatroom",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quasi, odit placeat officia dolor sunt quibusdam quaerat distinctio!",
-    liveUrl: "https://practical-engelbart-e97075.netlify.app",
-    githubUrl: "https://github.com/LukasV3/chatroom-app",
-    projectTechStack: ["react", "typescript", "tailwind"],
-  },
-];
 
 export default function Projects() {
   const section = {
@@ -145,7 +63,7 @@ function ProjectCard({
   description,
   liveUrl,
   githubUrl,
-  projectTechStack,
+  tags,
 }: ProjectCardProps) {
   return (
     <div className="green-pink-gradient p-px rounded-2xl group">
@@ -154,14 +72,10 @@ function ProjectCard({
 
         <p className="text-zinc-500 text-sm mt-1">{description}</p>
 
-        {projectTechStack.length > 0 && (
+        {tags.length > 0 && (
           <ul className="flex gap-2 text-sm mt-2">
-            {projectTechStack.map((projectTech) => {
-              const techItem = techStack.find(
-                (tech) => tech.title.toLowerCase() === projectTech.toLowerCase()
-              );
-
-              return <li className={techItem?.colorClass}>#{projectTech}</li>;
+            {tags.map((tag) => {
+              return <li className={tag.color}>#{tag.name}</li>;
             })}
           </ul>
         )}
