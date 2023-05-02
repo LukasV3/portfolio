@@ -58,16 +58,10 @@ export default function Projects() {
   );
 }
 
-function ProjectCard({
-  title,
-  description,
-  liveUrl,
-  githubUrl,
-  tags,
-}: ProjectCardProps) {
+function ProjectCard({ title, description, liveUrl, githubUrl, tags }: ProjectCardProps) {
   return (
     <div className="green-pink-gradient p-px rounded-2xl group">
-      <div className="bg-[#151030] h-full rounded-2xl p-5">
+      <div className="bg-purple-dark h-full rounded-2xl p-5">
         <h3 className="text-white text-2xl font-bold">{title}</h3>
 
         <p className="text-zinc-500 text-sm mt-1">{description}</p>

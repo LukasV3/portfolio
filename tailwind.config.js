@@ -7,6 +7,14 @@ export default {
       padding: "2rem",
     },
     extend: {
+      colors: {
+        purple: {
+         DEFAULT: "#bf61ff",
+         dark: "#151030"
+        },
+        green: "#00cea8",
+        background: "#050816"
+      },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },

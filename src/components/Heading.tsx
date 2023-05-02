@@ -29,14 +29,12 @@ export function Heading({
         {aboutHeading && (
           <img
             src={ProfileImg}
-            className="float-left mr-5 sm:mr-10 mt-1.5 rounded-full w-[75px] h-[75px] sm:w-[100px] sm:h-[100px] [shape-outside:circle(50%)]"
+            className="float-left mr-5 sm:mr-10 mt-1.5 rounded-full w-20 h-20 sm:w-28 sm:h-28 [shape-outside:circle(50%)]"
           />
         )}
 
         {body && (
-          <p className="text-sm text-zinc-500 text-secondary leading-[22px]">
-            {body}
-          </p>
+          <p className="text-sm text-zinc-500 text-secondary leading-[22px]">{body}</p>
         )}
       </div>
     </div>

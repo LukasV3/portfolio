@@ -4,22 +4,12 @@
 
 @layer utilities {
   .text-edge-outline {
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
-  }
-
-  .violet-gradient {
-    background: #804dee;
-    background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
-    background: -webkit-linear-gradient(
-      -90deg,
-      #804dee 0%,
-      rgba(60, 51, 80, 0) 100%
-    );
+    -webkit-text-stroke: 1px theme('colors.white' / 0.3);
   }
 
   .green-pink-gradient {
-    background: "#00cea8";
-    background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-    background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+    background: theme('colors.green');
+    background: linear-gradient(90.13deg, theme('colors.green') 1.9%, theme('colors.purple.DEFAULT') 97.5%);
+    background: -webkit-linear-gradient(-90.13deg, theme('colors.green') 1.9%, theme('colors.purple.DEFAULT') 97.5%);
   }
 }
