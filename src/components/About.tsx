@@ -12,7 +12,7 @@ export default function About() {
       />
 
       {technologies.length > 0 && (
-        <div className="clear-left mt-20 flex flex-wrap gap-x-10 gap-y-5">
+        <div className="clear-left mt-20 flex flex-wrap justify-center gap-x-10 gap-y-5 lg:justify-start">
           {technologies.map((tech) => (
             <img
               key={tech.title}

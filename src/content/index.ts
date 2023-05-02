@@ -3,6 +3,7 @@ import CssIcon from "../assets/tech/css3.png";
 import SassIcon from "../assets/tech/sass.png";
 import JavaScriptIcon from "../assets/tech/javascript.png";
 import ReactIcon from "../assets/tech/reactjs.png";
+import VueIcon from "../assets/tech/vue.png";
 import TypeScriptIcon from "../assets/tech/typescript.png";
 import TailwindIcon from "../assets/tech/tailwind.png";
 import GitIcon from "../assets/tech/git.png";
@@ -56,12 +57,16 @@ export const technologies = [
     icon: JavaScriptIcon,
   },
   {
+    title: "TypeScript",
+    icon: TypeScriptIcon,
+  },
+  {
     title: "React",
     icon: ReactIcon,
   },
   {
-    title: "TypeScript",
-    icon: TypeScriptIcon,
+    title: "Vue",
+    icon: VueIcon,
   },
   {
     title: "Git",
