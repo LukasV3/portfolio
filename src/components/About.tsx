@@ -12,13 +12,16 @@ export default function About() {
       />
 
       {technologies.length > 0 && (
-        <div className="clear-left mt-10 flex flex-wrap gap-x-10 gap-y-5">
+        <div className="clear-left mt-20 flex flex-wrap gap-x-10 gap-y-5">
           {technologies.map((tech) => (
             <img
+              key={tech.title}
               src={tech.icon}
-              title={tech.title}
               alt={tech.title}
               className="w-10 h-10"
+              width="40"
+              height="40"
+              loading="lazy"
             />
           ))}
         </div>

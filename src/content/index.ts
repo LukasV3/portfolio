@@ -28,7 +28,11 @@ export const aboutSection = {
   body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque eligendi fugit sun i fugit sunt nostrum placeat, officia dolores earum, quia modi assumenda suscipit quod totam eaque consectetur, provident cumque explicabo a iusto Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque eligendi fugit sunt n. nostrum placeat, officia dolores earum, quia modi assumenda suscipit quod totam eaque consectetur, provident cumque.",
 };
 
-// TODO: Add Vue
+export const projectsSection = {
+  heading: "Projects",
+  subheading: "My Work",
+  body: "Some of the projects are from work and some are things I created in my own time.",
+};
 
 export const technologies = [
   {

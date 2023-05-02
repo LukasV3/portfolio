@@ -25,11 +25,13 @@ export function Heading({
         {heading}.
       </h2>
 
-      <div className="mt-4 max-w-3xl">
+      <div className="mt-4 max-w-3xl sm:mt-10">
         {aboutHeading && (
           <img
             src={ProfileImg}
-            className="float-left mr-5 sm:mr-10 mt-1.5 rounded-full w-20 h-20 sm:w-28 sm:h-28 [shape-outside:circle(50%)]"
+            alt="Lukas Volk profile"
+            className="float-left mr-5 mb-1 sm:mr-10 rounded-full w-20 h-20 sm:w-28 sm:h-28 [shape-outside:circle(50%)]"
+            loading="lazy"
           />
         )}
 

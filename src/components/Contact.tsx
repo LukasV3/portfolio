@@ -96,14 +96,12 @@ function Form() {
         />
       </label>
 
-      <div className="w-fit green-pink-gradient p-px rounded-xl ml-auto">
-        <button
-          className="bg-purple-dark py-2 px-8 rounded-xl outline-none text-white font-bold hover:bg-purple-dark/50 duration-300"
-          type="submit"
-        >
-          {loading ? "Sending" : "Send"}
-        </button>
-      </div>
+      <button
+        className="w-fit ml-auto bg-purple-dark py-2 px-8 rounded-xl outline-none text-white font-bold border border-white hover:bg-white hover:text-purple-dark duration-300"
+        type="submit"
+      >
+        {loading ? "Sending" : "Send"}
+      </button>
 
       {success && <p className="text-center">Your message has been sent!</p>}
     </form>

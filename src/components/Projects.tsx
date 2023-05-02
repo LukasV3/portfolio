@@ -1,7 +1,7 @@
 import { Heading } from "./Heading";
 import LinkIcon from "../assets/icons/link.svg";
 import GitHubIcon from "../assets/icons/github.svg";
-import { projects } from "../content";
+import { projectsSection, projects } from "../content";
 
 type ProjectCardProps = {
   title: string;
@@ -14,19 +14,21 @@ type ProjectCardProps = {
   }[];
 };
 
-export default function Projects() {
-  const section = {
-    heading: "Projects",
-    subheading: "My Work",
-    body: "Some of the projects are from work and some are things I created in my own time.",
+type ProjectLinkProps = {
+  icon: {
+    src: string;
+    alt: string;
   };
+  url: string;
+};
 
+export default function Projects() {
   return (
     <section id="projects" className="container my-20 py-10">
       <Heading
-        heading={section.heading}
-        subheading={section.subheading}
-        body={section.body}
+        heading={projectsSection.heading}
+        subheading={projectsSection.subheading}
+        body={projectsSection.body}
       />
 
       <div className="mt-20 grid grid-cols-1 gap-4 md:grid-cols-3">
@@ -34,7 +36,7 @@ export default function Projects() {
           {projects
             .filter((_, i) => i % 3 === 0)
             .map((project) => (
-              <ProjectCard {...project} />
+              <ProjectCard key={project.title} {...project} />
             ))}
         </div>
 
@@ -42,7 +44,7 @@ export default function Projects() {
           {projects
             .filter((_, i) => i % 3 === 1)
             .map((project) => (
-              <ProjectCard {...project} />
+              <ProjectCard key={project.title} {...project} />
             ))}
         </div>
 
@@ -50,7 +52,7 @@ export default function Projects() {
           {projects
             .filter((_, i) => i % 3 === 2)
             .map((project) => (
-              <ProjectCard {...project} />
+              <ProjectCard key={project.title} {...project} />
             ))}
         </div>
       </div>
@@ -60,7 +62,7 @@ export default function Projects() {
 
 function ProjectCard({ title, description, liveUrl, githubUrl, tags }: ProjectCardProps) {
   return (
-    <div className="green-pink-gradient p-px rounded-2xl group">
+    <div className="green-purple-gradient p-px rounded-2xl group">
       <div className="bg-purple-dark h-full rounded-2xl p-5">
         <h3 className="text-white text-2xl font-bold">{title}</h3>
 
@@ -69,7 +71,11 @@ function ProjectCard({ title, description, liveUrl, githubUrl, tags }: ProjectCa
         {tags.length > 0 && (
           <ul className="flex gap-2 text-sm mt-2">
             {tags.map((tag) => {
-              return <li className={tag.color}>#{tag.name}</li>;
+              return (
+                <li key={tag.name} className={tag.color}>
+                  #{tag.name}
+                </li>
+              );
             })}
           </ul>
         )}
@@ -77,31 +83,38 @@ function ProjectCard({ title, description, liveUrl, githubUrl, tags }: ProjectCa
         {(liveUrl || githubUrl) && (
           <div className="mt-4 text-sm flex flex-col gap-1">
             {liveUrl && (
-              <a
-                href={liveUrl}
-                target="_blank"
-                className="flex items-center gap-2 opacity-70 hover:opacity-100 duration-300"
-              >
-                <img src={LinkIcon} className="w-4 h-4 mt-0.5" />
-
-                <p>{liveUrl.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "")}</p>
-              </a>
+              <ProjectLink icon={{ src: LinkIcon, alt: "External link" }} url={liveUrl} />
             )}
 
             {githubUrl && (
-              <a
-                href={githubUrl}
-                target="_blank"
-                className="flex items-center gap-2 opacity-70 hover:opacity-100 duration-300"
-              >
-                <img src={GitHubIcon} className="w-4 h-4 mt-0.5" />
-
-                <p>{githubUrl.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "")}</p>
-              </a>
+              <ProjectLink
+                icon={{ src: GitHubIcon, alt: "GitHub logo" }}
+                url={githubUrl}
+              />
             )}
           </div>
         )}
       </div>
     </div>
+  );
+}
+
+function ProjectLink({ icon, url }: ProjectLinkProps) {
+  return (
+    <a
+      href={url}
+      target="_blank"
+      className="flex items-center gap-2 opacity-70 hover:opacity-100 duration-300"
+    >
+      <img
+        src={icon.src}
+        alt={icon.alt}
+        className="w-4 h-4 mt-0.5"
+        width="16"
+        height="16"
+      />
+
+      <p>{url.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "")}</p>
+    </a>
   );
 }
