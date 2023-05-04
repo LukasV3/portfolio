@@ -159,7 +159,7 @@ export const projects = [
   {
     title: "Portfolio",
     description: "The website you're looking at!",
-    liveUrl: "",
+    liveUrl: "https://lukasvolk.dev",
     githubUrl: "https://github.com/LukasV3/portfolio",
     tags: [
       {
