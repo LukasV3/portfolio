@@ -1,12 +1,12 @@
-import HtmlIcon from "../assets/tech/html5.png";
-import CssIcon from "../assets/tech/css3.png";
-import SassIcon from "../assets/tech/sass.png";
-import JavaScriptIcon from "../assets/tech/javascript.png";
-import ReactIcon from "../assets/tech/reactjs.png";
-import VueIcon from "../assets/tech/vue.png";
-import TypeScriptIcon from "../assets/tech/typescript.png";
-import TailwindIcon from "../assets/tech/tailwind.png";
-import GitIcon from "../assets/tech/git.png";
+import HtmlIcon from "../assets/tech/html5.webp";
+import CssIcon from "../assets/tech/css3.webp";
+import SassIcon from "../assets/tech/sass.webp";
+import JavaScriptIcon from "../assets/tech/javascript.webp";
+import ReactIcon from "../assets/tech/reactjs.webp";
+import VueIcon from "../assets/tech/vue.webp";
+import TypeScriptIcon from "../assets/tech/typescript.webp";
+import TailwindIcon from "../assets/tech/tailwind.webp";
+import GitIcon from "../assets/tech/git.webp";
 
 export const navigation = [
   {

@@ -16,7 +16,7 @@ export default {
         background: "#050816"
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        "hero-pattern": "url('/src/assets/herobg.webp')",
       },
       animation: {
         "fade-in": "fade-in 3s ease-in-out forwards",

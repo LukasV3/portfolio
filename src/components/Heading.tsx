@@ -1,4 +1,4 @@
-import ProfileImg from "../assets/profile.jpg";
+import ProfileImg from "../assets/profile.webp";
 
 type HeadingProps = {
   heading: string;
