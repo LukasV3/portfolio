@@ -20,15 +20,15 @@ export default function Hero() {
 
       <div className="container max-w-lg my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 mb-4">
-          Self-taught frontend developer currently working at{" "}
+          Lead frontend developer currently working at{" "}
           <a
             target="_blank"
             href="https://destinationcore.com"
             className="underline duration-500 hover:text-zinc-300"
           >
             DestinationCore
-          </a>{" "}
-          based in Barcelona, Spain.
+          </a>
+          , based in Barcelona, Spain
         </h2>
 
         <SocialLinks />
