@@ -63,13 +63,13 @@ export default function Projects() {
 function ProjectCard({ title, description, liveUrl, githubUrl, tags }: ProjectCardProps) {
   return (
     <div className="green-purple-gradient p-px rounded-2xl group">
-      <div className="bg-purple-dark h-full rounded-2xl p-5">
+      <div className="bg-primary-dark h-full rounded-2xl p-5">
         <h3 className="text-white text-2xl font-bold">{title}</h3>
 
         <p className="text-zinc-500 text-sm mt-1">{description}</p>
 
         {tags.length > 0 && (
-          <ul className="flex gap-2 text-sm mt-2">
+          <ul className="flex flex-wrap gap-x-2 text-sm mt-2">
             {tags.map((tag) => {
               return (
                 <li key={tag.name} className={tag.color}>

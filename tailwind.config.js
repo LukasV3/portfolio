@@ -8,11 +8,11 @@ export default {
     },
     extend: {
       colors: {
-        purple: {
+        primary: {
          DEFAULT: "#bf61ff",
          dark: "#151030"
         },
-        green: "#00cea8",
+        secondary: "#00cea8",
         background: "#050816"
       },
       backgroundImage: {

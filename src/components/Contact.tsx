@@ -70,7 +70,7 @@ function Form() {
           name="name"
           placeholder="Name"
           required
-          className="bg-purple-dark py-4 px-6 text-white rounded-lg outline-none border-none font-medium"
+          className="bg-primary-dark py-4 px-6 text-white rounded-lg outline-none border-none font-medium"
         />
       </label>
 
@@ -81,7 +81,7 @@ function Form() {
           name="email"
           placeholder="Email"
           required
-          className="bg-purple-dark py-4 px-6 text-white rounded-lg outline-none border-none font-medium"
+          className="bg-primary-dark py-4 px-6 text-white rounded-lg outline-none border-none font-medium"
         />
       </label>
 
@@ -92,12 +92,12 @@ function Form() {
           name="message"
           placeholder="Message"
           required
-          className="bg-purple-dark py-4 px-6 text-white rounded-lg outline-none border-none font-medium"
+          className="bg-primary-dark py-4 px-6 text-white rounded-lg outline-none border-none font-medium"
         />
       </label>
 
       <button
-        className="w-fit ml-auto bg-purple-dark py-2 px-8 rounded-xl outline-none text-white font-bold border border-white hover:bg-white hover:text-purple-dark duration-300"
+        className="w-fit ml-auto bg-primary-dark py-2 px-8 rounded-xl outline-none text-white font-bold border border-white hover:bg-white hover:text-primary-dark duration-300"
         type="submit"
       >
         {loading ? "Sending" : "Send"}

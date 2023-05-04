@@ -26,13 +26,13 @@ export const navigation = [
 export const aboutSection = {
   heading: "Overview",
   subheading: "Introduction",
-  body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque eligendi fugit sun i fugit sunt nostrum placeat, officia dolores earum, quia modi assumenda suscipit quod totam eaque consectetur, provident cumque explicabo a iusto Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque eligendi fugit sunt n. nostrum placeat, officia dolores earum, quia modi assumenda suscipit quod totam eaque consectetur, provident cumque.",
+  body: "Hi there! My name is Lukas Volk, and I'm a self-taught frontend developer based in Barcelona, Spain. I'm currently working as the Lead Frontend Developer at DestinationCore where I play a crucial role in developing and successfully delivering the company's highest profile websites. I'm passionate about delivering high-quality, innovative solutions that exceed client expectations, and I am always looking for new challenges to push my skills further!",
 };
 
 export const projectsSection = {
   heading: "Projects",
   subheading: "My Work",
-  body: "Some of the projects are from work and some are things I created in my own time.",
+  body: "Some of the projects are from work and some are things I have created in my own time.",
 };
 
 export const technologies = [
@@ -83,111 +83,164 @@ export const projects = [
     githubUrl: "",
     tags: [
       {
-        name: "react",
-        color: "text-red-500",
-      },
-      {
-        name: "tailwind",
-        color: "text-blue-500",
-      },
-      {
-        name: "typescript",
+        name: "vue",
         color: "text-green-500",
+      },
+      {
+        name: "npm",
+        color: "text-red-500",
       },
     ],
   },
   {
     title: "Visit Lichfield",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quasi, odit placeat officia dolor sunt quibusdam quaerat distinctio!",
+    description: "DestinationCore Pro website built for Visit Lichfield.",
     liveUrl: "https://www.visitlichfield.co.uk",
     githubUrl: "",
     tags: [
       {
-        name: "react",
-        color: "text-red-500",
+        name: "tailwind",
+        color: "text-sky-500",
       },
       {
-        name: "typescript",
-        color: "text-yellow-500",
+        name: "vue",
+        color: "text-green-500",
+      },
+      {
+        name: "craftcms",
+        color: "text-orange-500",
       },
     ],
   },
   {
     title: "Notable",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quasi, odit placeat officia dolor sunt quibusdam quaerat distinctio! Nihil animi veniam molestias saepe, iure consequatur quisquam ex facere aperiam.",
+    description: "A note-taking app where users can easily create, edit, and organize their notes using customized tags for quick and efficient search and filtering.",
     liveUrl: "https://notable-lv3.netlify.app",
     githubUrl: "https://github.com/LukasV3/notable",
     tags: [
       {
+        name: "tailwind",
+        color: "text-sky-500",
+      },
+      {
         name: "react",
-        color: "text-red-500",
+        color: "text-cyan-500",
+      },
+      {
+        name: "reactrouter",
+        color: "text-indigo-500",
+      },
+      {
+        name: "typescript",
+        color: "text-blue-500",
       },
     ],
   },
   {
     title: "Visit Worcestershire Trade",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quasi, odit placeat officia dolor sunt quibusdam quaerat distinctio!",
+    description: "DestinationCore Pro website built for Visit Worcestershire DMO.",
     liveUrl: "https://www.visitworcestershire.org",
     githubUrl: "",
     tags: [
       {
-        name: "react",
-        color: "text-red-500",
+        name: "tailwind",
+        color: "text-sky-500",
+      },
+      {
+        name: "vue",
+        color: "text-green-500",
+      },
+      {
+        name: "craftcms",
+        color: "text-orange-500",
       },
     ],
   },
   {
     title: "Portfolio",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quasi, odit placeat officia dolor sunt quibusdam quaerat distinctio!",
-    liveUrl: "https://lukas.dev",
+    description: "The website you're looking at!",
+    liveUrl: "",
     githubUrl: "https://github.com/LukasV3/portfolio",
     tags: [
       {
+        name: "tailwind",
+        color: "text-sky-500",
+      },
+      {
         name: "react",
-        color: "text-red-500",
+        color: "text-cyan-500",
+      },
+      {
+        name: "typescript",
+        color: "text-blue-500",
       },
     ],
   },
   {
     title: "MetroCentre Redesign",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quasi, odit placeat officia dolor sunt quibusdam quaerat distinctio!",
+    description: "DestinationCore Pro website redesigned and built for Metrocentre Shopping Centre.",
     liveUrl: "https://themetrocentre.co.uk",
     githubUrl: "",
     tags: [
       {
-        name: "react",
-        color: "text-red-500",
+        name: "tailwind",
+        color: "text-sky-500",
+      },
+      {
+        name: "vue",
+        color: "text-green-500",
+      },
+      {
+        name: "craftcms",
+        color: "text-orange-500",
       },
     ],
   },
   {
     title: "Visit Bury St Edmunds",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quasi, odit placeat officia dolor sunt quibusdam quaerat distinctio!",
+    description: "DestinationCore Pro website built for Bury St Edmunds & Beyond.",
     liveUrl: "https://www.visit-burystedmunds.co.uk",
     githubUrl: "",
     tags: [
       {
-        name: "react",
-        color: "text-red-500",
+        name: "tailwind",
+        color: "text-sky-500",
+      },
+      {
+        name: "vue",
+        color: "text-green-500",
+      },
+      {
+        name: "craftcms",
+        color: "text-orange-500",
       },
     ],
   },
   {
     title: "Chatroom",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis deleniti quasi, odit placeat officia dolor sunt quibusdam quaerat distinctio!",
+    description: "A full-stack chat app where users can create an account and send messages to a public chatroom which all users can see and respond to.",
     liveUrl: "https://practical-engelbart-e97075.netlify.app",
     githubUrl: "https://github.com/LukasV3/chatroom-app",
     tags: [
       {
+        name: "tailwind",
+        color: "text-sky-500",
+      },
+      {
         name: "react",
-        color: "text-red-500",
+        color: "text-cyan-500",
+      },
+      {
+        name: "reactrouter",
+        color: "text-indigo-500",
+      },
+      {
+        name: "typescript",
+        color: "text-blue-500",
+      },
+      {
+        name: "firebase",
+        color: "text-yellow-500",
       },
     ],
   },
