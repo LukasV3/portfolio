@@ -34,14 +34,14 @@ From your command line:
 
 ```bash
 # Clone this repository
-$ git  clone  https://github.com/LukasV3/portfolio.git
+$ git clone https://github.com/LukasV3/portfolio.git
 
 # Go into the repository
-$ cd  notable
+$ cd portfolio
 
 # Install dependencies
-$ npm  install
+$ npm install
 
 # Run the app
-$ npm  run  dev
+$ npm run dev
 ```
