@@ -35,11 +35,7 @@ export function Heading({
           />
         )}
 
-        {body && (
-          <p className="text-sm text-zinc-500 text-secondary leading-[22px]">
-            {body}
-          </p>
-        )}
+        {body && <p className="text-sm text-zinc-500 leading-[22px]">{body}</p>}
       </div>
     </div>
   );
