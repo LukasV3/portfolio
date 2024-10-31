@@ -113,7 +113,7 @@ function ProjectLink({ icon, url }: ProjectLinkProps) {
     <a
       href={url}
       target="_blank"
-      className="flex items-center gap-2 opacity-70 hover:opacity-100 duration-300"
+      className="flex items-center gap-2 opacity-70 break-all hover:opacity-100 duration-300"
     >
       <img
         src={icon.src}
