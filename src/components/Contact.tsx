@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <section id="contact" className="mt-20 pt-10">
       <div className="flex flex-col gap-y-20 lg:relative">
-        <div className="container lg:grid lg:grid-cols-2 lg:z-10">
+        <div className="container lg:grid lg:grid-cols-2">
           <div className="bg-[#100d25] p-8 rounded-2xl border-b-2 lg:mr-28 lg:mb-10">
             <div className="flex justify-between">
               <Heading heading="Contact" subheading="Get in touch" />
@@ -25,9 +25,10 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="lg:w-full lg:h-full lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:grid lg:grid-cols-2 lg:content-end">
+        <div className="lg:w-full lg:h-full lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:grid lg:grid-cols-2 lg:content-end lg:-z-10">
           <div className="relative ml-5 lg:col-start-2">
-            <div className="absolute h-3/5 w-full bg-gradient-to-b from-background"></div>
+            <div className="absolute h-1/3 w-full bg-gradient-to-b from-background"></div>
+
             <Map />
           </div>
         </div>
@@ -130,7 +131,7 @@ function Map() {
       <Geographies
         geography="/features.json"
         fill="#1d1836"
-        stroke="#FFFFFF"
+        stroke="#e3e3e3"
         strokeWidth={1.5}
       >
         {({ geographies }) =>
@@ -140,11 +141,11 @@ function Map() {
         }
       </Geographies>
       <Annotation
-        subject={[1.6, 41.75]}
+        subject={[0.8, 52.1]}
         dx={-110}
         dy={-125}
         connectorProps={{
-          stroke: "#fff",
+          stroke: "#e3e3e3",
           strokeWidth: 2,
           strokeLinecap: "round",
         }}
@@ -156,7 +157,7 @@ function Map() {
           fill="#fff"
           className="text-base font-bold"
         >
-          Currently based in Barcelona
+          Currently based in Essex, UK
         </text>
       </Annotation>
     </ComposableMap>
