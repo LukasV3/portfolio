@@ -114,7 +114,8 @@ export const projects = [
   },
   {
     title: "Notable",
-    description: "A note-taking app where users can easily create, edit, and organize their notes using customized tags for quick and efficient search and filtering.",
+    description:
+      "A note-taking app where users can easily create, edit, and organize their notes using customized tags for quick and efficient search and filtering.",
     liveUrl: "https://notable-lv3.netlify.app",
     githubUrl: "https://github.com/LukasV3/notable",
     tags: [
@@ -138,7 +139,8 @@ export const projects = [
   },
   {
     title: "Visit Worcestershire Trade",
-    description: "DestinationCore Pro website built for Visit Worcestershire DMO.",
+    description:
+      "DestinationCore Pro website built for Visit Worcestershire DMO.",
     liveUrl: "https://www.visitworcestershire.org",
     githubUrl: "",
     tags: [
@@ -178,7 +180,8 @@ export const projects = [
   },
   {
     title: "MetroCentre Redesign",
-    description: "DestinationCore Pro website redesigned and built for Metrocentre Shopping Centre.",
+    description:
+      "DestinationCore Pro website redesigned and built for Metrocentre Shopping Centre.",
     liveUrl: "https://themetrocentre.co.uk",
     githubUrl: "",
     tags: [
@@ -198,7 +201,8 @@ export const projects = [
   },
   {
     title: "Visit Bury St Edmunds",
-    description: "DestinationCore Pro website built for Bury St Edmunds & Beyond.",
+    description:
+      "DestinationCore Pro website built for Bury St Edmunds & Beyond.",
     liveUrl: "https://www.visit-burystedmunds.co.uk",
     githubUrl: "",
     tags: [
@@ -218,7 +222,8 @@ export const projects = [
   },
   {
     title: "Chatroom",
-    description: "A full-stack chat app where users can create an account and send messages to a public chatroom which all users can see and respond to.",
+    description:
+      "A full-stack chat app where users can create an account and send messages to a public chatroom which all users can see and respond to.",
     liveUrl: "https://practical-engelbart-e97075.netlify.app",
     githubUrl: "https://github.com/LukasV3/chatroom-app",
     tags: [

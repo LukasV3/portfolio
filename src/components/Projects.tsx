@@ -60,7 +60,13 @@ export default function Projects() {
   );
 }
 
-function ProjectCard({ title, description, liveUrl, githubUrl, tags }: ProjectCardProps) {
+function ProjectCard({
+  title,
+  description,
+  liveUrl,
+  githubUrl,
+  tags,
+}: ProjectCardProps) {
   return (
     <div className="green-purple-gradient p-px rounded-2xl group">
       <div className="bg-primary-dark h-full rounded-2xl p-5">
@@ -83,7 +89,10 @@ function ProjectCard({ title, description, liveUrl, githubUrl, tags }: ProjectCa
         {(liveUrl || githubUrl) && (
           <div className="mt-4 text-sm flex flex-col gap-1">
             {liveUrl && (
-              <ProjectLink icon={{ src: LinkIcon, alt: "External link" }} url={liveUrl} />
+              <ProjectLink
+                icon={{ src: LinkIcon, alt: "External link" }}
+                url={liveUrl}
+              />
             )}
 
             {githubUrl && (

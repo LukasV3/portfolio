@@ -9,11 +9,11 @@ export default {
     extend: {
       colors: {
         primary: {
-         DEFAULT: "#bf61ff",
-         dark: "#151030"
+          DEFAULT: "#bf61ff",
+          dark: "#151030",
         },
         secondary: "#00cea8",
-        background: "#050816"
+        background: "#050816",
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.webp')",

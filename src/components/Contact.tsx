@@ -1,5 +1,10 @@
 import { Heading } from "./Heading";
-import { ComposableMap, Geographies, Geography, Annotation } from "react-simple-maps";
+import {
+  ComposableMap,
+  Geographies,
+  Geography,
+  Annotation,
+} from "react-simple-maps";
 import { SocialLinks } from "./SocialLinks";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
@@ -62,7 +67,11 @@ function Form() {
   }
 
   return (
-    <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
+    <form
+      ref={formRef}
+      onSubmit={handleSubmit}
+      className="mt-12 flex flex-col gap-8"
+    >
       <label className="flex flex-col">
         <span className="text-white font-medium mb-4">Your Name*</span>
         <input
@@ -125,7 +134,9 @@ function Map() {
         strokeWidth={1.5}
       >
         {({ geographies }) =>
-          geographies.map((geo) => <Geography key={geo.rsmKey} geography={geo} />)
+          geographies.map((geo) => (
+            <Geography key={geo.rsmKey} geography={geo} />
+          ))
         }
       </Geographies>
       <Annotation

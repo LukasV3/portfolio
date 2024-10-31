@@ -4,12 +4,20 @@
 
 @layer utilities {
   .text-edge-outline {
-    -webkit-text-stroke: 1px theme('colors.white' / 0.3);
+    -webkit-text-stroke: 1px theme("colors.white" / 0.3);
   }
 
   .green-purple-gradient {
-    background: theme('colors.secondary');
-    background: linear-gradient(90.13deg, theme('colors.secondary') 1.9%, theme('colors.primary.DEFAULT') 97.5%);
-    background: -webkit-linear-gradient(-90.13deg, theme('colors.secondary') 1.9%, theme('colors.primary.DEFAULT') 97.5%);
+    background: theme("colors.secondary");
+    background: linear-gradient(
+      90.13deg,
+      theme("colors.secondary") 1.9%,
+      theme("colors.primary.DEFAULT") 97.5%
+    );
+    background: -webkit-linear-gradient(
+      -90.13deg,
+      theme("colors.secondary") 1.9%,
+      theme("colors.primary.DEFAULT") 97.5%
+    );
   }
 }
