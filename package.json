@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -16,6 +16,7 @@
     "react-simple-maps": "^3.0.0"
   },
   "devDependencies": {
+    "@eslint/js": "^9.13.0",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@types/react-simple-maps": "^3.0.0",
@@ -23,12 +24,15 @@
     "@typescript-eslint/parser": "^5.57.1",
     "@vitejs/plugin-react": "^4.0.0-beta.0",
     "autoprefixer": "^10.4.14",
-    "eslint": "^8.38.0",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "globals": "^15.11.0",
     "postcss": "^8.4.23",
     "tailwindcss": "^3.3.1",
     "typescript": "^5.0.2",
+    "typescript-eslint": "^8.12.2",
     "vite": "^4.3.0"
   }
 }
