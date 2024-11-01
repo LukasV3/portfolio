@@ -76,10 +76,26 @@ export const technologies = [
 
 export const projects = [
   {
+    title: "Porsche",
+    description:
+      "A data-driven marketing service from Porsche that provides Porsche dealers with market-leading website solutions to capture more traffic and convert qualified shoppers.",
+    liveUrl: "https://www.porsche.com",
+    githubUrl: "",
+    tags: ["vue", "typescript", "astro", "sitecore"],
+  },
+  {
+    title: "Pluto Digital",
+    description:
+      "Founded a web design and development agency creating bespoke websites for small to medium-sized businesses.",
+    liveUrl: "https://pluto-digital.webflow.io",
+    githubUrl: "",
+    tags: ["figma", "webflow"],
+  },
+  {
     title: "DestinationCore Component Library",
     description:
       "Library of standalone VueJS components common across DestinationCore's portfolio of websites.",
-    liveUrl: "",
+    liveUrl: "https://destinationcore.com",
     githubUrl: "",
     tags: ["vue", "npm"],
   },
@@ -89,14 +105,6 @@ export const projects = [
     liveUrl: "https://www.visitlichfield.co.uk",
     githubUrl: "",
     tags: ["tailwind", "vue", "craftcms"],
-  },
-  {
-    title: "Porsche",
-    description:
-      "A data-driven marketing service from Porsche that provides Porsche dealers with market-leading website solutions to capture more traffic and convert qualified shoppers.",
-    liveUrl: "https://www.porsche.com",
-    githubUrl: "",
-    tags: ["vue", "typescript", "astro", "sitecore"],
   },
   {
     title: "Visit Worcestershire Trade",
@@ -122,19 +130,10 @@ export const projects = [
     tags: ["tailwind", "vue", "craftcms"],
   },
   {
-    title: "Visit Bury St Edmunds",
-    description:
-      "DestinationCore Pro website built for Bury St Edmunds & Beyond.",
-    liveUrl: "https://www.visit-burystedmunds.co.uk",
+    title: "Bolt Gym",
+    description: "A custom design and development project for a UK boxing gym.",
+    liveUrl: "https://bolt-gym.webflow.io",
     githubUrl: "",
-    tags: ["tailwind", "vue", "craftcms"],
-  },
-  {
-    title: "Chatroom",
-    description:
-      "A full-stack chat app where users can create an account and send messages to a public chatroom which all users can see and respond to.",
-    liveUrl: "https://practical-engelbart-e97075.netlify.app",
-    githubUrl: "https://github.com/LukasV3/chatroom-app",
-    tags: ["tailwind", "react", "reactrouter", "typescript", "firebase"],
+    tags: ["figma", "webflow"],
   },
 ];

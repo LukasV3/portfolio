@@ -144,10 +144,6 @@ function getTagClass(tagName: string): string {
       color: "cyan-500",
     },
     {
-      name: "reactrouter",
-      color: "indigo-500",
-    },
-    {
       name: "typescript",
       color: "blue-500",
     },
@@ -166,6 +162,14 @@ function getTagClass(tagName: string): string {
     {
       name: "firebase",
       color: "yellow-500",
+    },
+    {
+      name: "figma",
+      color: "red-400",
+    },
+    {
+      name: "webflow",
+      color: "indigo-500",
     },
   ];
   const tagObj = tagsColorArr.find((tag) => tag.name === tagName);
