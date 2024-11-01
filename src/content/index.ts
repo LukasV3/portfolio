@@ -81,61 +81,22 @@ export const projects = [
       "Library of standalone VueJS components common across DestinationCore's portfolio of websites.",
     liveUrl: "",
     githubUrl: "",
-    tags: [
-      {
-        name: "vue",
-        color: "text-green-500",
-      },
-      {
-        name: "npm",
-        color: "text-red-500",
-      },
-    ],
+    tags: ["vue", "npm"],
   },
   {
     title: "Visit Lichfield",
     description: "DestinationCore Pro website built for Visit Lichfield.",
     liveUrl: "https://www.visitlichfield.co.uk",
     githubUrl: "",
-    tags: [
-      {
-        name: "tailwind",
-        color: "text-sky-500",
-      },
-      {
-        name: "vue",
-        color: "text-green-500",
-      },
-      {
-        name: "craftcms",
-        color: "text-orange-500",
-      },
-    ],
+    tags: ["tailwind", "vue", "craftcms"],
   },
   {
-    title: "Notable",
+    title: "Porsche",
     description:
-      "A note-taking app where users can easily create, edit, and organize their notes using customized tags for quick and efficient search and filtering.",
-    liveUrl: "https://notable-lv3.netlify.app",
-    githubUrl: "https://github.com/LukasV3/notable",
-    tags: [
-      {
-        name: "tailwind",
-        color: "text-sky-500",
-      },
-      {
-        name: "react",
-        color: "text-cyan-500",
-      },
-      {
-        name: "reactrouter",
-        color: "text-indigo-500",
-      },
-      {
-        name: "typescript",
-        color: "text-blue-500",
-      },
-    ],
+      "A data-driven marketing service from Porsche that provides Porsche dealers with market-leading website solutions to capture more traffic and convert qualified shoppers.",
+    liveUrl: "https://www.porsche.com",
+    githubUrl: "",
+    tags: ["vue", "typescript", "astro", "sitecore"],
   },
   {
     title: "Visit Worcestershire Trade",
@@ -143,40 +104,14 @@ export const projects = [
       "DestinationCore Pro website built for Visit Worcestershire DMO.",
     liveUrl: "https://www.visitworcestershire.org",
     githubUrl: "",
-    tags: [
-      {
-        name: "tailwind",
-        color: "text-sky-500",
-      },
-      {
-        name: "vue",
-        color: "text-green-500",
-      },
-      {
-        name: "craftcms",
-        color: "text-orange-500",
-      },
-    ],
+    tags: ["tailwind", "vue", "craftcms"],
   },
   {
     title: "Portfolio",
     description: "The website you're looking at!",
     liveUrl: "https://lukasvolk.dev",
     githubUrl: "https://github.com/LukasV3/portfolio",
-    tags: [
-      {
-        name: "tailwind",
-        color: "text-sky-500",
-      },
-      {
-        name: "react",
-        color: "text-cyan-500",
-      },
-      {
-        name: "typescript",
-        color: "text-blue-500",
-      },
-    ],
+    tags: ["tailwind", "react", "typescript"],
   },
   {
     title: "MetroCentre Redesign",
@@ -184,20 +119,7 @@ export const projects = [
       "DestinationCore Pro website redesigned and built for Metrocentre Shopping Centre.",
     liveUrl: "https://themetrocentre.co.uk",
     githubUrl: "",
-    tags: [
-      {
-        name: "tailwind",
-        color: "text-sky-500",
-      },
-      {
-        name: "vue",
-        color: "text-green-500",
-      },
-      {
-        name: "craftcms",
-        color: "text-orange-500",
-      },
-    ],
+    tags: ["tailwind", "vue", "craftcms"],
   },
   {
     title: "Visit Bury St Edmunds",
@@ -205,20 +127,7 @@ export const projects = [
       "DestinationCore Pro website built for Bury St Edmunds & Beyond.",
     liveUrl: "https://www.visit-burystedmunds.co.uk",
     githubUrl: "",
-    tags: [
-      {
-        name: "tailwind",
-        color: "text-sky-500",
-      },
-      {
-        name: "vue",
-        color: "text-green-500",
-      },
-      {
-        name: "craftcms",
-        color: "text-orange-500",
-      },
-    ],
+    tags: ["tailwind", "vue", "craftcms"],
   },
   {
     title: "Chatroom",
@@ -226,27 +135,6 @@ export const projects = [
       "A full-stack chat app where users can create an account and send messages to a public chatroom which all users can see and respond to.",
     liveUrl: "https://practical-engelbart-e97075.netlify.app",
     githubUrl: "https://github.com/LukasV3/chatroom-app",
-    tags: [
-      {
-        name: "tailwind",
-        color: "text-sky-500",
-      },
-      {
-        name: "react",
-        color: "text-cyan-500",
-      },
-      {
-        name: "reactrouter",
-        color: "text-indigo-500",
-      },
-      {
-        name: "typescript",
-        color: "text-blue-500",
-      },
-      {
-        name: "firebase",
-        color: "text-yellow-500",
-      },
-    ],
+    tags: ["tailwind", "react", "reactrouter", "typescript", "firebase"],
   },
 ];

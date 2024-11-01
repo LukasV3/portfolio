@@ -8,10 +8,7 @@ type ProjectCardProps = {
   description: string;
   liveUrl: string;
   githubUrl: string;
-  tags: {
-    name: string;
-    color: string;
-  }[];
+  tags: string[];
 };
 
 type ProjectLinkProps = {
@@ -78,8 +75,8 @@ function ProjectCard({
           <ul className="flex flex-wrap gap-x-2 text-sm mt-2">
             {tags.map((tag) => {
               return (
-                <li key={tag.name} className={tag.color}>
-                  #{tag.name}
+                <li key={tag} className={getTagClass(tag)}>
+                  #{tag}
                 </li>
               );
             })}
@@ -126,4 +123,52 @@ function ProjectLink({ icon, url }: ProjectLinkProps) {
       <p>{url.replace(/^(?:https?:\/\/)?(?:www\.)?/i, "")}</p>
     </a>
   );
+}
+
+function getTagClass(tagName: string): string {
+  const tagsColorArr = [
+    {
+      name: "npm",
+      color: "red-500",
+    },
+    {
+      name: "tailwind",
+      color: "sky-500",
+    },
+    {
+      name: "vue",
+      color: "green-500",
+    },
+    {
+      name: "react",
+      color: "cyan-500",
+    },
+    {
+      name: "reactrouter",
+      color: "indigo-500",
+    },
+    {
+      name: "typescript",
+      color: "blue-500",
+    },
+    {
+      name: "astro",
+      color: "purple-500",
+    },
+    {
+      name: "sitecore",
+      color: "rose-600",
+    },
+    {
+      name: "craftcms",
+      color: "orange-500",
+    },
+    {
+      name: "firebase",
+      color: "yellow-500",
+    },
+  ];
+  const tagObj = tagsColorArr.find((tag) => tag.name === tagName);
+
+  return `text-${tagObj ? tagObj.color : "white"}`;
 }
