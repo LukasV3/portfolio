@@ -7,6 +7,10 @@ import VueIcon from "../assets/tech/vue.webp";
 import TypeScriptIcon from "../assets/tech/typescript.webp";
 import TailwindIcon from "../assets/tech/tailwind.webp";
 import GitIcon from "../assets/tech/git.webp";
+import FigmaIcon from "../assets/tech/figma.webp";
+import WebflowIcon from "../assets/tech/webflow.webp";
+import AstroIcon from "../assets/tech/astro.webp";
+import CraftCmsIcon from "../assets/tech/craftcms.webp";
 
 export const navigation = [
   {
@@ -26,7 +30,9 @@ export const navigation = [
 export const aboutSection = {
   heading: "Overview",
   subheading: "Introduction",
-  body: "Hi there! My name is Lukas Volk, and I'm a self-taught frontend developer based in Barcelona, Spain. I'm currently working as the Lead Frontend Developer at DestinationCore where I play a crucial role in developing and successfully delivering the company's highest profile websites. I'm passionate about delivering high-quality, innovative solutions that exceed client expectations, and I am always looking for new challenges to push my skills further!",
+  body: `Hello! I’m Lukas Volk, a self-taught frontend developer based in Essex, UK. Over the years, I’ve had the privilege of working with some amazing brands — from renowned names like Porsche during my time in Barcelona to those closer to home, like Lakeside Shopping Centre and the like. 
+  
+  This year, I took an exciting step by founding Pluto Digital, my own design and development agency, which is where I’m now dedicating most of my time to. I’m always eager for new challenges, so if you’re interested in collaborating, don’t hesitate to reach out!`,
 };
 
 export const projectsSection = {
@@ -36,6 +42,10 @@ export const projectsSection = {
 };
 
 export const technologies = [
+  {
+    title: "Figma",
+    icon: FigmaIcon,
+  },
   {
     title: "HTML5",
     icon: HtmlIcon,
@@ -69,73 +79,54 @@ export const technologies = [
     icon: VueIcon,
   },
   {
+    title: "Astro",
+    icon: AstroIcon,
+  },
+  {
     title: "Git",
     icon: GitIcon,
+  },
+  {
+    title: "Webflow",
+    icon: WebflowIcon,
+  },
+  {
+    title: "Craft CMS",
+    icon: CraftCmsIcon,
   },
 ];
 
 export const projects = [
   {
+    title: "Porsche",
+    description:
+      "A data-driven marketing service from Porsche that provides Porsche dealers with market-leading website solutions to capture more traffic and convert qualified shoppers.",
+    liveUrl: "https://www.porsche.com",
+    githubUrl: "",
+    tags: ["vue", "typescript", "astro", "sitecore"],
+  },
+  {
+    title: "Pluto Digital",
+    description:
+      "Founded a web design and development agency creating bespoke websites for small to medium-sized businesses.",
+    liveUrl: "https://pluto-digital.webflow.io",
+    githubUrl: "",
+    tags: ["figma", "webflow"],
+  },
+  {
     title: "DestinationCore Component Library",
     description:
       "Library of standalone VueJS components common across DestinationCore's portfolio of websites.",
-    liveUrl: "",
+    liveUrl: "https://destinationcore.com",
     githubUrl: "",
-    tags: [
-      {
-        name: "vue",
-        color: "text-green-500",
-      },
-      {
-        name: "npm",
-        color: "text-red-500",
-      },
-    ],
+    tags: ["vue", "npm"],
   },
   {
     title: "Visit Lichfield",
     description: "DestinationCore Pro website built for Visit Lichfield.",
     liveUrl: "https://www.visitlichfield.co.uk",
     githubUrl: "",
-    tags: [
-      {
-        name: "tailwind",
-        color: "text-sky-500",
-      },
-      {
-        name: "vue",
-        color: "text-green-500",
-      },
-      {
-        name: "craftcms",
-        color: "text-orange-500",
-      },
-    ],
-  },
-  {
-    title: "Notable",
-    description:
-      "A note-taking app where users can easily create, edit, and organize their notes using customized tags for quick and efficient search and filtering.",
-    liveUrl: "https://notable-lv3.netlify.app",
-    githubUrl: "https://github.com/LukasV3/notable",
-    tags: [
-      {
-        name: "tailwind",
-        color: "text-sky-500",
-      },
-      {
-        name: "react",
-        color: "text-cyan-500",
-      },
-      {
-        name: "reactrouter",
-        color: "text-indigo-500",
-      },
-      {
-        name: "typescript",
-        color: "text-blue-500",
-      },
-    ],
+    tags: ["tailwind", "vue", "craftcms"],
   },
   {
     title: "Visit Worcestershire Trade",
@@ -143,110 +134,37 @@ export const projects = [
       "DestinationCore Pro website built for Visit Worcestershire DMO.",
     liveUrl: "https://www.visitworcestershire.org",
     githubUrl: "",
-    tags: [
-      {
-        name: "tailwind",
-        color: "text-sky-500",
-      },
-      {
-        name: "vue",
-        color: "text-green-500",
-      },
-      {
-        name: "craftcms",
-        color: "text-orange-500",
-      },
-    ],
+    tags: ["tailwind", "vue", "craftcms"],
   },
   {
     title: "Portfolio",
     description: "The website you're looking at!",
     liveUrl: "https://lukasvolk.dev",
     githubUrl: "https://github.com/LukasV3/portfolio",
-    tags: [
-      {
-        name: "tailwind",
-        color: "text-sky-500",
-      },
-      {
-        name: "react",
-        color: "text-cyan-500",
-      },
-      {
-        name: "typescript",
-        color: "text-blue-500",
-      },
-    ],
+    tags: ["tailwind", "react", "typescript"],
   },
   {
-    title: "MetroCentre Redesign",
+    title: "Metrocentre Shopping Centre",
     description:
       "DestinationCore Pro website redesigned and built for Metrocentre Shopping Centre.",
     liveUrl: "https://themetrocentre.co.uk",
     githubUrl: "",
-    tags: [
-      {
-        name: "tailwind",
-        color: "text-sky-500",
-      },
-      {
-        name: "vue",
-        color: "text-green-500",
-      },
-      {
-        name: "craftcms",
-        color: "text-orange-500",
-      },
-    ],
+    tags: ["tailwind", "vue", "craftcms"],
   },
   {
-    title: "Visit Bury St Edmunds",
+    title: "Lakeside Shopping Centre",
     description:
-      "DestinationCore Pro website built for Bury St Edmunds & Beyond.",
-    liveUrl: "https://www.visit-burystedmunds.co.uk",
+      "DestinationCore Pro website redesigned and built for Lakeside Shopping Centre.",
+    liveUrl: "https://lakeside-shopping.com",
     githubUrl: "",
-    tags: [
-      {
-        name: "tailwind",
-        color: "text-sky-500",
-      },
-      {
-        name: "vue",
-        color: "text-green-500",
-      },
-      {
-        name: "craftcms",
-        color: "text-orange-500",
-      },
-    ],
+    tags: ["tailwind", "vue", "craftcms"],
   },
   {
-    title: "Chatroom",
+    title: "Visit Peak District & Derbyshire",
     description:
-      "A full-stack chat app where users can create an account and send messages to a public chatroom which all users can see and respond to.",
-    liveUrl: "https://practical-engelbart-e97075.netlify.app",
-    githubUrl: "https://github.com/LukasV3/chatroom-app",
-    tags: [
-      {
-        name: "tailwind",
-        color: "text-sky-500",
-      },
-      {
-        name: "react",
-        color: "text-cyan-500",
-      },
-      {
-        name: "reactrouter",
-        color: "text-indigo-500",
-      },
-      {
-        name: "typescript",
-        color: "text-blue-500",
-      },
-      {
-        name: "firebase",
-        color: "text-yellow-500",
-      },
-    ],
+      "DestinationCore Enterprise website built for Visit Peak District & Derbyshire.",
+    liveUrl: "https://visitpeakdistrict.com",
+    githubUrl: "",
+    tags: ["tailwind", "vue", "craftcms"],
   },
 ];
