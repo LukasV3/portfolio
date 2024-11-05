@@ -109,7 +109,7 @@ export const projects = [
     title: "Pluto Digital",
     description:
       "Founded a web design and development agency creating bespoke websites for small to medium-sized businesses.",
-    liveUrl: "https://pluto-digital.webflow.io",
+    liveUrl: "",
     githubUrl: "",
     tags: ["figma", "webflow"],
   },

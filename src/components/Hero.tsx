@@ -20,8 +20,8 @@ export default function Hero() {
 
       <div className="container max-w-lg my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 mb-4">
-          Founder and Lead Frontend Developer at Pluto Digital, my design and
-          development agency based in Essex, UK.
+          Founder and Freelance Frontend Developer at Pluto Digital, a design
+          and development agency based in the UK.
         </h2>
 
         <SocialLinks />
