@@ -122,7 +122,7 @@ export const projects = [
     tags: ["tailwind", "react", "typescript"],
   },
   {
-    title: "MetroCentre Redesign",
+    title: "MetroCentre Shopping Centre",
     description:
       "DestinationCore Pro website redesigned and built for Metrocentre Shopping Centre.",
     liveUrl: "https://themetrocentre.co.uk",
@@ -130,10 +130,20 @@ export const projects = [
     tags: ["tailwind", "vue", "craftcms"],
   },
   {
-    title: "Bolt Gym",
-    description: "A custom design and development project for a UK boxing gym.",
-    liveUrl: "https://bolt-gym.webflow.io",
+    title: "Lakeside Shopping Centre",
+    description:
+      "DestinationCore Pro website redesigned and built for Lakeside Shopping Centre.",
+    liveUrl: "https://lakeside-shopping.com",
     githubUrl: "",
-    tags: ["figma", "webflow"],
+    tags: ["tailwind", "vue", "craftcms"],
+    logo: "",
+  },
+  {
+    title: "Visit Peak District & Derbyshire",
+    description:
+      "DestinationCore Enterprise website built for Visit Peak District & Derbyshire.",
+    liveUrl: "https://visitpeakdistrict.com",
+    githubUrl: "",
+    tags: ["tailwind", "vue", "craftcms"],
   },
 ];
