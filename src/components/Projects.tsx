@@ -69,7 +69,7 @@ function ProjectCard({
       <div className="bg-primary-dark h-full rounded-2xl p-5">
         <h3 className="text-white text-2xl font-bold">{title}</h3>
 
-        <p className="text-zinc-500 text-sm mt-1">{description}</p>
+        <p className="text-zinc-500 text-sm mt-3">{description}</p>
 
         {tags.length > 0 && (
           <ul className="flex flex-wrap gap-x-2 text-sm mt-2">
@@ -84,7 +84,7 @@ function ProjectCard({
         )}
 
         {(liveUrl || githubUrl) && (
-          <div className="mt-4 text-sm flex flex-col gap-1">
+          <div className="mt-4 text-sm flex flex-col gap-1 w-fit">
             {liveUrl && (
               <ProjectLink
                 icon={{ src: LinkIcon, alt: "External link" }}

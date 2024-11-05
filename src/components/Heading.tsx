@@ -25,7 +25,7 @@ export function Heading({
         {heading}.
       </h2>
 
-      <div className="mt-4 max-w-4xl sm:mt-10">
+      <div className="mt-4 max-w-[67rem] sm:mt-10">
         {aboutHeading && (
           <img
             src={ProfileImg}
@@ -35,7 +35,11 @@ export function Heading({
           />
         )}
 
-        {body && <p className="text-sm text-zinc-500 leading-[22px]">{body}</p>}
+        {body && (
+          <p className="text-sm text-zinc-500 leading-[22px] whitespace-pre-line">
+            {body}
+          </p>
+        )}
       </div>
     </div>
   );

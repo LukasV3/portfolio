@@ -30,7 +30,9 @@ export const navigation = [
 export const aboutSection = {
   heading: "Overview",
   subheading: "Introduction",
-  body: "Hi there! My name is Lukas Volk, and I'm a self-taught frontend developer based in Barcelona, Spain. I'm currently working as the Lead Frontend Developer at DestinationCore where I play a crucial role in developing and successfully delivering the company's highest profile websites. I'm passionate about delivering high-quality, innovative solutions that exceed client expectations, and I am always looking for new challenges to push my skills further!",
+  body: `Hello! I’m Lukas Volk, a self-taught frontend developer based in Essex, UK. Over the years, I’ve had the privilege of working with some amazing brands — from renowned names like Porsche during my time in Barcelona to those closer to home, like Lakeside Shopping Centre and the like. 
+  
+  This year, I took an exciting step by founding Pluto Digital, my own design and development agency, which is where I’m now dedicating most of my time to. I’m always eager for new challenges, so if you’re interested in collaborating, don’t hesitate to reach out!`,
 };
 
 export const projectsSection = {

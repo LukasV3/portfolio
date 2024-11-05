@@ -119,6 +119,11 @@ function Form() {
 }
 
 function Map() {
+  const mapColors = {
+    fill: "#1d1836",
+    stroke: "#e3e3e3",
+  };
+
   return (
     <ComposableMap
       projection="geoAzimuthalEqualArea"
@@ -130,8 +135,8 @@ function Map() {
     >
       <Geographies
         geography="/features.json"
-        fill="#1d1836"
-        stroke="#e3e3e3"
+        fill={mapColors.fill}
+        stroke={mapColors.stroke}
         strokeWidth={1.5}
       >
         {({ geographies }) =>
@@ -145,7 +150,7 @@ function Map() {
         dx={-110}
         dy={-125}
         connectorProps={{
-          stroke: "#e3e3e3",
+          stroke: mapColors.stroke,
           strokeWidth: 2,
           strokeLinecap: "round",
         }}
