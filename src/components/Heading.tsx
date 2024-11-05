@@ -25,7 +25,7 @@ export function Heading({
         {heading}.
       </h2>
 
-      <div className="mt-4 max-w-3xl sm:mt-10">
+      <div className="mt-4 max-w-4xl sm:mt-10">
         {aboutHeading && (
           <img
             src={ProfileImg}

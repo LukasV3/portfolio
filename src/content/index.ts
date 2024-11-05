@@ -7,6 +7,10 @@ import VueIcon from "../assets/tech/vue.webp";
 import TypeScriptIcon from "../assets/tech/typescript.webp";
 import TailwindIcon from "../assets/tech/tailwind.webp";
 import GitIcon from "../assets/tech/git.webp";
+import FigmaIcon from "../assets/tech/figma.webp";
+import WebflowIcon from "../assets/tech/webflow.webp";
+import AstroIcon from "../assets/tech/astro.webp";
+import CraftCmsIcon from "../assets/tech/craftcms.webp";
 
 export const navigation = [
   {
@@ -36,6 +40,10 @@ export const projectsSection = {
 };
 
 export const technologies = [
+  {
+    title: "Figma",
+    icon: FigmaIcon,
+  },
   {
     title: "HTML5",
     icon: HtmlIcon,
@@ -69,8 +77,20 @@ export const technologies = [
     icon: VueIcon,
   },
   {
+    title: "Astro",
+    icon: AstroIcon,
+  },
+  {
     title: "Git",
     icon: GitIcon,
+  },
+  {
+    title: "Webflow",
+    icon: WebflowIcon,
+  },
+  {
+    title: "Craft CMS",
+    icon: CraftCmsIcon,
   },
 ];
 
@@ -136,7 +156,6 @@ export const projects = [
     liveUrl: "https://lakeside-shopping.com",
     githubUrl: "",
     tags: ["tailwind", "vue", "craftcms"],
-    logo: "",
   },
   {
     title: "Visit Peak District & Derbyshire",
