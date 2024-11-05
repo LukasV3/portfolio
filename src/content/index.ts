@@ -144,7 +144,7 @@ export const projects = [
     tags: ["tailwind", "react", "typescript"],
   },
   {
-    title: "MetroCentre Shopping Centre",
+    title: "Metrocentre Shopping Centre",
     description:
       "DestinationCore Pro website redesigned and built for Metrocentre Shopping Centre.",
     liveUrl: "https://themetrocentre.co.uk",
