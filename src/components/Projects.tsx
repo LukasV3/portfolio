@@ -129,50 +129,50 @@ function getTagClass(tagName: string): string {
   const tagsColorArr = [
     {
       name: "npm",
-      color: "red-500",
+      color: "text-red-500",
     },
     {
       name: "tailwind",
-      color: "sky-500",
+      color: "text-sky-500",
     },
     {
       name: "vue",
-      color: "green-500",
+      color: "text-green-500",
     },
     {
       name: "react",
-      color: "cyan-500",
+      color: "text-cyan-500",
     },
     {
       name: "typescript",
-      color: "blue-500",
+      color: "text-blue-500",
     },
     {
       name: "astro",
-      color: "purple-500",
+      color: "text-purple-500",
     },
     {
       name: "sitecore",
-      color: "rose-600",
+      color: "text-rose-600",
     },
     {
       name: "craftcms",
-      color: "orange-500",
+      color: "text-orange-500",
     },
     {
       name: "firebase",
-      color: "yellow-500",
+      color: "text-yellow-500",
     },
     {
       name: "figma",
-      color: "red-400",
+      color: "text-red-400",
     },
     {
       name: "webflow",
-      color: "indigo-500",
+      color: "text-indigo-500",
     },
   ];
   const tagObj = tagsColorArr.find((tag) => tag.name === tagName);
 
-  return `text-${tagObj ? tagObj.color : "white"}`;
+  return tagObj ? tagObj.color : "text-white";
 }
