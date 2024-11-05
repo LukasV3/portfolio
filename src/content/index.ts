@@ -8,6 +8,8 @@ import TypeScriptIcon from "../assets/tech/typescript.webp";
 import TailwindIcon from "../assets/tech/tailwind.webp";
 import GitIcon from "../assets/tech/git.webp";
 
+import PorscheLogo from "../assets/project/porsche-emblem.png";
+
 export const navigation = [
   {
     title: "About",
@@ -82,6 +84,7 @@ export const projects = [
     liveUrl: "https://www.porsche.com",
     githubUrl: "",
     tags: ["vue", "typescript", "astro", "sitecore"],
+    logo: PorscheLogo,
   },
   {
     title: "Pluto Digital",
@@ -90,6 +93,7 @@ export const projects = [
     liveUrl: "https://pluto-digital.webflow.io",
     githubUrl: "",
     tags: ["figma", "webflow"],
+    logo: "",
   },
   {
     title: "DestinationCore Component Library",
@@ -98,6 +102,7 @@ export const projects = [
     liveUrl: "https://destinationcore.com",
     githubUrl: "",
     tags: ["vue", "npm"],
+    logo: "",
   },
   {
     title: "Visit Lichfield",
@@ -105,6 +110,7 @@ export const projects = [
     liveUrl: "https://www.visitlichfield.co.uk",
     githubUrl: "",
     tags: ["tailwind", "vue", "craftcms"],
+    logo: "",
   },
   {
     title: "Visit Worcestershire Trade",
@@ -113,6 +119,7 @@ export const projects = [
     liveUrl: "https://www.visitworcestershire.org",
     githubUrl: "",
     tags: ["tailwind", "vue", "craftcms"],
+    logo: "",
   },
   {
     title: "Portfolio",
@@ -120,6 +127,7 @@ export const projects = [
     liveUrl: "https://lukasvolk.dev",
     githubUrl: "https://github.com/LukasV3/portfolio",
     tags: ["tailwind", "react", "typescript"],
+    logo: "",
   },
   {
     title: "MetroCentre Shopping Centre",
@@ -128,6 +136,7 @@ export const projects = [
     liveUrl: "https://themetrocentre.co.uk",
     githubUrl: "",
     tags: ["tailwind", "vue", "craftcms"],
+    logo: "",
   },
   {
     title: "Lakeside Shopping Centre",
@@ -145,5 +154,6 @@ export const projects = [
     liveUrl: "https://visitpeakdistrict.com",
     githubUrl: "",
     tags: ["tailwind", "vue", "craftcms"],
+    logo: "",
   },
 ];

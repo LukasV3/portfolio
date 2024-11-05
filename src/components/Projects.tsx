@@ -9,6 +9,7 @@ type ProjectCardProps = {
   liveUrl: string;
   githubUrl: string;
   tags: string[];
+  logo: string;
 };
 
 type ProjectLinkProps = {
@@ -63,10 +64,11 @@ function ProjectCard({
   liveUrl,
   githubUrl,
   tags,
+  logo,
 }: ProjectCardProps) {
   return (
     <div className="green-purple-gradient p-px rounded-2xl group">
-      <div className="bg-primary-dark h-full rounded-2xl p-5">
+      <div className="bg-primary-dark h-full rounded-2xl p-5 relative overflow-clip">
         <h3 className="text-white text-2xl font-bold">{title}</h3>
 
         <p className="text-zinc-500 text-sm mt-1">{description}</p>
@@ -99,6 +101,13 @@ function ProjectCard({
               />
             )}
           </div>
+        )}
+
+        {logo && (
+          <img
+            src={logo}
+            className="absolute -bottom-12 right-4 h-32 opacity-100"
+          />
         )}
       </div>
     </div>
