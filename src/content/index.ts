@@ -45,10 +45,6 @@ export const projectsSection = {
 
 export const technologies = [
   {
-    title: "Figma",
-    icon: FigmaIcon,
-  },
-  {
     title: "HTML5",
     icon: HtmlIcon,
   },
@@ -59,6 +55,10 @@ export const technologies = [
   {
     title: "SASS",
     icon: SassIcon,
+  },
+  {
+    title: "Figma",
+    icon: FigmaIcon,
   },
   {
     title: "Tailwind CSS",
