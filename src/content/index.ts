@@ -11,6 +11,8 @@ import FigmaIcon from "../assets/tech/figma.webp";
 import WebflowIcon from "../assets/tech/webflow.webp";
 import AstroIcon from "../assets/tech/astro.webp";
 import CraftCmsIcon from "../assets/tech/craftcms.webp";
+import VitestIcon from "../assets/tech/vitest.webp";
+import PlaywrightIcon from "../assets/tech/playwright.webp";
 
 export const navigation = [
   {
@@ -87,12 +89,20 @@ export const technologies = [
     icon: GitIcon,
   },
   {
-    title: "Webflow",
-    icon: WebflowIcon,
+    title: "Vitest",
+    icon: VitestIcon,
+  },
+  {
+    title: "Playwright",
+    icon: PlaywrightIcon,
   },
   {
     title: "Craft CMS",
     icon: CraftCmsIcon,
+  },
+  {
+    title: "Webflow",
+    icon: WebflowIcon,
   },
 ];
 
