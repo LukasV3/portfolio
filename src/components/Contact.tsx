@@ -39,10 +39,10 @@ export default function Contact() {
 
 function Form() {
   const formRef = useRef<HTMLFormElement>(null);
-  const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
+  const [success, setSuccess] = useState<boolean>(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setLoading(true);
     if (!formRef.current) throw Error("formRef is not assigned");

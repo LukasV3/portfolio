@@ -14,9 +14,9 @@ export default function About() {
       {technologies.length > 0 && (
         // TODO: Add tooltips
         <div className="clear-left mt-20 flex flex-wrap justify-center gap-x-10 gap-y-5 lg:justify-start">
-          {technologies.map((tech) => (
+          {technologies.map((tech, index) => (
             <img
-              key={tech.title}
+              key={index}
               src={tech.icon}
               alt={tech.title}
               className="w-10 h-10"
