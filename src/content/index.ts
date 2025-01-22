@@ -33,8 +33,8 @@ export const aboutSection = {
   heading: "Overview",
   subheading: "Introduction",
   body: `Hello! I’m Lukas Volk, a self-taught frontend developer based in Essex, UK. Over the years, I’ve had the privilege of working with some amazing brands — from renowned names like Porsche during my time in Barcelona to those closer to home, like Lakeside Shopping Centre and the like. 
-  
-  This year, I took an exciting step by founding Pluto Digital, my own design and development agency, which is where I’m now dedicating most of my time to. I’m always eager for new challenges, so if you’re interested in collaborating, don’t hesitate to reach out!`,
+
+  This year, I took an exciting step by working independently with brands on all things digital, which is where I’m now dedicating most of my time. I’m always eager for new challenges, so if you’re interested in collaborating, don’t hesitate to reach out!`,
 };
 
 export const projectsSection = {
@@ -111,14 +111,14 @@ export const projects = [
     title: "Porsche",
     description:
       "A data-driven marketing service from Porsche that provides Porsche dealers with market-leading website solutions to capture more traffic and convert qualified shoppers.",
-    liveUrl: "https://www.porsche.com",
+    liveUrl: "https://www.porsche.com/uk",
     githubUrl: "",
     tags: ["vue", "typescript", "astro", "sitecore"],
   },
   {
     title: "Pluto Digital",
     description:
-      "Founded a web design and development agency creating bespoke websites for small to medium-sized businesses.",
+      "Working independently with brands and small to medium-sized businesses on all things digital.",
     liveUrl: "",
     githubUrl: "",
     tags: ["figma", "webflow"],
@@ -132,9 +132,10 @@ export const projects = [
     tags: ["vue", "npm"],
   },
   {
-    title: "Visit Lichfield",
-    description: "DestinationCore Pro website built for Visit Lichfield.",
-    liveUrl: "https://www.visitlichfield.co.uk",
+    title: "Metrocentre Shopping Centre",
+    description:
+      "DestinationCore Pro website redesigned and built for Metrocentre Shopping Centre - Europe’s largest shopping and leisure centre.",
+    liveUrl: "https://themetrocentre.co.uk",
     githubUrl: "",
     tags: ["tailwind", "vue", "craftcms"],
   },
@@ -148,19 +149,19 @@ export const projects = [
   },
   {
     title: "Portfolio",
-    description: "The website you're looking at!",
+    description: "The website you're looking at! 👀",
     liveUrl: "https://lukasvolk.dev",
     githubUrl: "https://github.com/LukasV3/portfolio",
     tags: ["tailwind", "react", "typescript"],
   },
   {
-    title: "Metrocentre Shopping Centre",
-    description:
-      "DestinationCore Pro website redesigned and built for Metrocentre Shopping Centre.",
-    liveUrl: "https://themetrocentre.co.uk",
+    title: "Visit Lichfield",
+    description: "DestinationCore Pro website built for Visit Lichfield.",
+    liveUrl: "https://www.visitlichfield.co.uk",
     githubUrl: "",
     tags: ["tailwind", "vue", "craftcms"],
   },
+
   {
     title: "Lakeside Shopping Centre",
     description:
@@ -172,7 +173,7 @@ export const projects = [
   {
     title: "Visit Peak District & Derbyshire",
     description:
-      "DestinationCore Enterprise website built for Visit Peak District & Derbyshire.",
+      "DestinationCore Enterprise website built for Visit Peak District & Derbyshire. A tourism hub which attracts over 13 million visitors annually.",
     liveUrl: "https://visitpeakdistrict.com",
     githubUrl: "",
     tags: ["tailwind", "vue", "craftcms"],
